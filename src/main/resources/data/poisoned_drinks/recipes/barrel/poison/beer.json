@@ -8,10 +8,10 @@
   },
   "input_fluid": {
     "ingredient": "tfc:beer",
-    "amount": 1000
+    "amount": 400
   },
   "output_fluid": {
     "fluid": "poisoned_drinks:poisoned_beer",
-    "amount": 1000
+    "amount": 400
   }
 }

@@ -114,9 +114,9 @@ def generate_misc_lang():
 def generate_instant_barrel_recipes():
     print('\tGenerating instant barrel recipes...')
     for alcohol in ALCOHOLS:
-        barrel_instant_recipe(rm, ('poison', alcohol), 'poisoned_drinks:powder/hemlock', f'1000 tfc:{alcohol}', None, f'1000 poisoned_drinks:poisoned_{alcohol}')
-        barrel_instant_recipe(rm, ('poison', f'aged_{alcohol}'), 'poisoned_drinks:powder/hemlock', f'1000 tfcagedalcohol:aged_{alcohol}', None, f'1000 poisoned_drinks:poisoned_aged_{alcohol}')
-    barrel_instant_recipe(rm, ('poison', 'water'), 'poisoned_drinks:powder/hemlock', '1000 minecraft:water', None, '1000 poisoned_drinks:poisoned_water')
+        barrel_instant_recipe(rm, ('poison', alcohol), 'poisoned_drinks:powder/hemlock', f'400 tfc:{alcohol}', None, f'400 poisoned_drinks:poisoned_{alcohol}')
+        barrel_instant_recipe(rm, ('poison', f'aged_{alcohol}'), 'poisoned_drinks:powder/hemlock', f'400 tfcagedalcohol:aged_{alcohol}', None, f'400 poisoned_drinks:poisoned_aged_{alcohol}')
+    barrel_instant_recipe(rm, ('poison', 'water'), 'poisoned_drinks:powder/hemlock', '400 minecraft:water', None, '400 poisoned_drinks:poisoned_water')
     
 def generate_heat_recipes():
     print('\tGenerating heat recipes...')

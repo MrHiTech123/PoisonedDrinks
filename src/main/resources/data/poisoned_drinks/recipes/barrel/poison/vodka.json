@@ -8,10 +8,10 @@
   },
   "input_fluid": {
     "ingredient": "tfc:vodka",
-    "amount": 1000
+    "amount": 400
   },
   "output_fluid": {
     "fluid": "poisoned_drinks:poisoned_vodka",
-    "amount": 1000
+    "amount": 400
   }
 }

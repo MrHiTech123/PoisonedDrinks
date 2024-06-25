@@ -8,10 +8,10 @@
   },
   "input_fluid": {
     "ingredient": "tfcagedalcohol:aged_vodka",
-    "amount": 1000
+    "amount": 400
   },
   "output_fluid": {
     "fluid": "poisoned_drinks:poisoned_aged_vodka",
-    "amount": 1000
+    "amount": 400
   }
 }

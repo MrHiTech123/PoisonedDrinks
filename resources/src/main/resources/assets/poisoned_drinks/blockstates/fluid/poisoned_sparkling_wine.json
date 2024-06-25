@@ -1,8 +1,0 @@
-{
-  "__comment__": "This file was automatically created by mcresources",
-  "variants": {
-    "": {
-      "model": "poisoned_drinks:block/fluid/poisoned_sparkling_wine"
-    }
-  }
-}

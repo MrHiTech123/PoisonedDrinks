@@ -119,6 +119,7 @@
   "extra_recipe_mappings": {
     "poisoned_drinks:food/hemlock": 0,
     "poisoned_drinks:food/cooked_hemlock": 0,
-    "poisoned_drinks:powder/hemlock": 0
+    "poisoned_drinks:powder/hemlock": 0,
+    "poisoned_drinks:seeds/hemlock": 0
   }
 }

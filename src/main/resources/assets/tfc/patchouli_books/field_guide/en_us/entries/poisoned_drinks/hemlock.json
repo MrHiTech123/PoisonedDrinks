@@ -111,7 +111,7 @@
     {
       "type": "tfc:instant_barrel_recipe",
       "recipe": "poisoned_drinks:barrel/poison/beer",
-      "text": "Hemlock Powder can be used to poison various drinks, such as water or alcohol. This includes Aged Alcohol from the Aged Alcohol mod.$(br2)Unless they are drunk, poisoned drinks are completely indistinguishable from their non-poisoned counterparts."
+      "text": "Hemlock Powder can be used to poison various drinks, such as water or alcohol. This includes Firmalife Wine and Aged Alcohol from the Aged Alcohol mod.$(br2)Unless they are drunk, poisoned drinks are completely indistinguishable from their non-poisoned counterparts."
     }
 
   ],

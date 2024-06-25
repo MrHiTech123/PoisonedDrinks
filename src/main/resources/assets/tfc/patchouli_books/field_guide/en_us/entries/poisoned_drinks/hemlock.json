@@ -1,0 +1,124 @@
+{
+  "name": "Hemlock",
+  "category": "tfc:mechanics",
+  "icon": "poisoned_drinks:food/hemlock",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(thing)Hemlock$() is a crop that grows in your world. It grows between 3 - 30 °C and its primary nutrient is $(d)Potassium$(). Hemlock is poisonous and primarily used to make $(thing)Hemlock Powder$(), which can be used as a poison."
+    },
+    {
+      "type": "tfc:multimultiblock",
+      "text": "",
+      "multiblocks": [
+        {
+          "pattern": [
+            [
+              "X"
+            ],
+            [
+              "Y"
+            ],
+            [
+              "0"
+            ]
+          ],
+          "mapping": {
+            "X": "poisoned_drinks:crop/hemlock[age=0]",
+            "Y": "tfc:farmland/loam"
+          }
+        },
+        {
+          "pattern": [
+            [
+              "X"
+            ],
+            [
+              "Y"
+            ],
+            [
+              "0"
+            ]
+          ],
+          "mapping": {
+            "X": "poisoned_drinks:crop/hemlock[age=1]",
+            "Y": "tfc:farmland/loam"
+          }
+        },
+        {
+          "pattern": [
+            [
+              "X"
+            ],
+            [
+              "Y"
+            ],
+            [
+              "0"
+            ]
+          ],
+          "mapping": {
+            "X": "poisoned_drinks:crop/hemlock[age=2]",
+            "Y": "tfc:farmland/loam"
+          }
+        },
+        {
+          "pattern": [
+            [
+              "X"
+            ],
+            [
+              "Y"
+            ],
+            [
+              "0"
+            ]
+          ],
+          "mapping": {
+            "X": "poisoned_drinks:crop/hemlock[age=3]",
+            "Y": "tfc:farmland/loam"
+          }
+        },
+        {
+          "pattern": [
+            [
+              "X"
+            ],
+            [
+              "Y"
+            ],
+            [
+              "0"
+            ]
+          ],
+          "mapping": {
+            "X": "poisoned_drinks:crop/hemlock[age=4]",
+            "Y": "tfc:farmland/loam"
+          }
+        }
+      ]
+    },
+    {
+      "type": "tfc:heat_recipe",
+      "recipe": "poisoned_drinks:heating/food/cooked_hemlock",
+      "text": "The first step to making Hemlock Powder is to cook the Hemlock. However, this also increases its potency, so be careful not to eat it!"
+    },
+    {
+      "type": "tfc:quern_recipe",
+      "recipe": "poisoned_drinks:quern/food/cooked_hemlock",
+      "text": "Next, grind the Cooked Hemlock in a quern to make Hemlock Powder."
+    },
+    {
+      "type": "tfc:instant_barrel_recipe",
+      "recipe": "poisoned_drinks:barrel/poison/beer",
+      "text": "Hemlock Powder can be used to poison various drinks, such as water or alcohol. This includes Aged Alcohol from the Aged Alcohol mod.$(br2)Unless they are drunk, poisoned drinks are completely indistinguishable from their non-poisoned counterparts."
+    }
+
+  ],
+  "read_by_default": true,
+  "extra_recipe_mappings": {
+    "poisoned_drinks:food/hemlock": 0,
+    "poisoned_drinks:food/cooked_hemlock": 0,
+    "poisoned_drinks:powder/hemlock": 0
+  }
+}

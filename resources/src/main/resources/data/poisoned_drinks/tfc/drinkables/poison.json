@@ -1,0 +1,13 @@
+{
+  "__comment__": "This file was automatically created by mcresources",
+  "ingredient": {
+    "tag": "poisoned_drinks:poisons"
+  },
+  "effects": [
+    {
+      "type": "minecraft:nausea",
+      "duration": 1200
+    }
+  ],
+  "may_drink_when_full": true
+}

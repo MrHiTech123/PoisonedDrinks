@@ -70,7 +70,7 @@ def generate_crops():
 def generate_food():
     print('Generating food items...')
     food_item(rm, ('hemlock'), 'poisoned_drinks:food/hemlock', Category.vegetable, 4, 2, 0, decay=0.7, veg=1)
-    food_item(rm, ('cooked_hemlock'), 'poisoned_drinks:food/cooked_hemlock', Category.vegetable, 6, 2, 0, decay=0.7, veg=1.5)
+    food_item(rm, ('cooked_hemlock'), 'poisoned_drinks:food/cooked_hemlock', Category.vegetable, 6, 2, 0, decay=1.0, veg=1.5)
     
 
 def generate_block_models():
@@ -141,7 +141,7 @@ def generate_heat_recipes():
 
 def generate_quern_recipes():
     print('\tGenerating quern recipes...')
-    quern_recipe(rm, ('food', 'cooked_hemlock'), 'poisoned_drinks:food/cooked_hemlock', 'poisoned_drinks:powder/hemlock')
+    quern_recipe(rm, ('food', 'cooked_hemlock'), not_rotten('poisoned_drinks:food/cooked_hemlock'), 'poisoned_drinks:powder/hemlock')
 
 def generate_recipes():
     print('Generating recipes...')

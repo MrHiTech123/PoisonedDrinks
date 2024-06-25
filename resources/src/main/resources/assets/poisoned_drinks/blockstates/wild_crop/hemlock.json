@@ -1,0 +1,11 @@
+{
+  "__comment__": "This file was automatically created by mcresources",
+  "variants": {
+    "mature=true": {
+      "model": "poisoned_drinks:block/wild_crop/hemlock"
+    },
+    "mature=false": {
+      "model": "poisoned_drinks:block/dead_crop/hemlock"
+    }
+  }
+}

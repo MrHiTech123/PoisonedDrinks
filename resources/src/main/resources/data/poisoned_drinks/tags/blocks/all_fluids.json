@@ -1,0 +1,28 @@
+{
+  "__comment__": "This file was automatically created by mcresources",
+  "replace": false,
+  "values": [
+    "poisoned_drinks:fluid/poisoned_beer",
+    "poisoned_drinks:fluid/poisoned_cider",
+    "poisoned_drinks:fluid/poisoned_rum",
+    "poisoned_drinks:fluid/poisoned_sake",
+    "poisoned_drinks:fluid/poisoned_vodka",
+    "poisoned_drinks:fluid/poisoned_whiskey",
+    "poisoned_drinks:fluid/poisoned_corn_whiskey",
+    "poisoned_drinks:fluid/poisoned_rye_whiskey",
+    "poisoned_drinks:fluid/poisoned_aged_beer",
+    "poisoned_drinks:fluid/poisoned_aged_cider",
+    "poisoned_drinks:fluid/poisoned_aged_rum",
+    "poisoned_drinks:fluid/poisoned_aged_sake",
+    "poisoned_drinks:fluid/poisoned_aged_vodka",
+    "poisoned_drinks:fluid/poisoned_aged_whiskey",
+    "poisoned_drinks:fluid/poisoned_aged_corn_whiskey",
+    "poisoned_drinks:fluid/poisoned_aged_rye_whiskey",
+    "poisoned_drinks:fluid/poisoned_water",
+    "poisoned_drinks:fluid/poisoned_red_wine",
+    "poisoned_drinks:fluid/poisoned_white_wine",
+    "poisoned_drinks:fluid/poisoned_rose_wine",
+    "poisoned_drinks:fluid/poisoned_sparkling_wine",
+    "poisoned_drinks:fluid/poisoned_dessert_wine"
+  ]
+}

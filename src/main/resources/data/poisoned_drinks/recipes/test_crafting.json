@@ -1,0 +1,36 @@
+{
+  INVALID JSON SO THIS FAILS
+  "__comment__": "This file was automatically created by mcresources",
+  "type": "tfc:advanced_shapeless_crafting",
+  "ingredients": [
+    {
+      "type": "poisoned_drinks:consumed_container_fluid_item",
+      "fluid_ingredient": {
+        "ingredient": "minecraft:water",
+        "amount": 100
+      }
+    },
+    {
+      "item": "tfc:powder/flux"
+    }
+  ],
+  "result": {
+    "item": "minecraft:stick",
+    "modifiers": [
+      {
+        "type": "poisoned_drinks:change_fluid_nbt",
+        "fluid": {
+          "fluid": "tfc:limewater",
+          "amount": 100
+        }
+      }
+    ]
+  },
+  "primary_ingredient": {
+    "type": "poisoned_drinks:consumed_container_fluid_item",
+    "fluid_ingredient": {
+      "ingredient": "minecraft:water",
+      "amount": 100
+    }
+  }
+}

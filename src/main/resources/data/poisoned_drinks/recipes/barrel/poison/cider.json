@@ -1,0 +1,17 @@
+{
+  "__comment__": "This file was automatically created by mcresources",
+  "type": "tfc:barrel_instant",
+  "input_item": {
+    "ingredient": {
+      "item": "poisoned_drinks:powder/hemlock"
+    }
+  },
+  "input_fluid": {
+    "ingredient": "tfc:cider",
+    "amount": 1000
+  },
+  "output_fluid": {
+    "fluid": "poisoned_drinks:poisoned_cider",
+    "amount": 1000
+  }
+}

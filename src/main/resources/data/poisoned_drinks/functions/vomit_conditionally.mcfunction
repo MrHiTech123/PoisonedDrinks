@@ -1,0 +1,1 @@
+execute at @e[nbt={ActiveEffects:[{Id:9}]},predicate=poisoned_drinks:vomit_prob] run function poisoned_drinks:vomit_effect

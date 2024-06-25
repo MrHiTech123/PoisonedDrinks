@@ -1,0 +1,1 @@
+Many parts of this code and assets were copied from TerraFirmaCraft and licensed under EUPL v1.2. Thank you TFC devs!

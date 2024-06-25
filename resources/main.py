@@ -109,6 +109,7 @@ def generate_misc_lang():
     rm.lang('fluid.poisoned_drinks.poisoned_water', 'Water')
     rm.lang('item.poisoned_drinks.bucket.poisoned_water', 'Poisoned Water Bucket')
     rm.lang('block.poisoned_drinks.poisoned_water', 'Water')
+    rm.lang('death.attack.vomiting', "%1$s vomited to death")
     
 
 def generate_instant_barrel_recipes():

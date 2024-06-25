@@ -57,5 +57,6 @@
   "block.poisoned_drinks.fluid.poisoned_aged_rye_whiskey": "Aged Rye Whiskey",
   "fluid.poisoned_drinks.poisoned_water": "Water",
   "item.poisoned_drinks.bucket.poisoned_water": "Poisoned Water Bucket",
-  "block.poisoned_drinks.poisoned_water": "Water"
+  "block.poisoned_drinks.poisoned_water": "Water",
+  "death.attack.vomiting": "%1$s vomited to death"
 }

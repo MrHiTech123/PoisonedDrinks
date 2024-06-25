@@ -22,8 +22,12 @@ public enum PoisonedBeverages {
     AGED_VODKA(-2302756),
     AGED_WHISKEY(-10995943),
     AGED_CORN_WHISKEY(-2504777),
-    AGED_RYE_WHISKEY(-3703471);
-    
+    AGED_RYE_WHISKEY(-3703471),
+    RED_WINE(-6222591),
+    WHITE_WINE(-3085),
+    ROSE_WINE(-668985),
+    SPARKLING_WINE(-4395),
+    DESSERT_WINE(-857120);
     private final String id;
     private final int color;
     

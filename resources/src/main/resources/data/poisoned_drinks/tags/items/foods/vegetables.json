@@ -1,0 +1,8 @@
+{
+  "__comment__": "This file was automatically created by mcresources",
+  "replace": false,
+  "values": [
+    "poisoned_drinks:food/hemlock",
+    "poisoned_drinks:food/cooked_hemlock"
+  ]
+}

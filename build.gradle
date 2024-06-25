@@ -200,6 +200,8 @@ dependencies {
     implementation fg.deobf("curse.maven:jade-324717:5390389")
     // Aged Alcohols
     implementation fg.deobf("curse.maven:tfc-aged-alcohol-880532:5331987")
+    // Firmalife
+    implementation fg.deobf("curse.maven:firmalife-453394:5456804")
     // Item zoom
     implementation fg.deobf("curse.maven:itemzoom-261725:5043628")
 }

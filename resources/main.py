@@ -9,6 +9,9 @@ POISONED_ALCOHOLS = ['poisoned_' + alcohol for alcohol in ALCOHOLS]
 POISONED_ALCOHOLS.extend(['poisoned_aged_' + alcohol for alcohol in ALCOHOLS])
 POISONED_ALCOHOLS.append('poisoned_water')
 
+WINES = [wine + '_wine' for wine in ('red', 'white', 'rose', 'sparkling', 'dessert')]
+POISONED_WINES = ['poisoned_' + wine for wine in WINES]
+
 
 rm = ResourceManager('poisoned_drinks')
 
@@ -74,6 +77,9 @@ def generate_block_models():
     print('\tGenerating block models...')
     for alcohol in POISONED_ALCOHOLS:
         water_based_fluid(rm, alcohol)
+    for wine in POISONED_WINES:
+        water_based_fluid(rm, wine)
+    
 
 def generate_item_models():
     print('\tGenerating item models...')
@@ -106,6 +112,11 @@ def generate_misc_lang():
         rm.lang(f'item.poisoned_drinks.bucket.poisoned_aged_{alcohol}', lang(f'Poisoned Aged {alcohol} bucket'))
         rm.lang(f'block.poisoned_drinks.fluid.poisoned_aged_{alcohol}', lang(f'Aged {alcohol}'))
     
+    for wine in WINES:
+        rm.lang(f'fluid.poisoned_drinks.poisoned_{wine}', lang(wine))
+        rm.lang(f'item.poisoned_drinks.bucket.poisoned_{wine}', lang(f'Poisoned {wine} bucket'))
+        rm.lang(f'block.poisoned_drinks.fluid.poisoned_{wine}', lang(wine))
+    
     rm.lang('fluid.poisoned_drinks.poisoned_water', 'Water')
     rm.lang('item.poisoned_drinks.bucket.poisoned_water', 'Poisoned Water Bucket')
     rm.lang('block.poisoned_drinks.poisoned_water', 'Water')
@@ -117,6 +128,8 @@ def generate_instant_barrel_recipes():
     for alcohol in ALCOHOLS:
         barrel_instant_recipe(rm, ('poison', alcohol), 'poisoned_drinks:powder/hemlock', f'400 tfc:{alcohol}', None, f'400 poisoned_drinks:poisoned_{alcohol}')
         barrel_instant_recipe(rm, ('poison', f'aged_{alcohol}'), 'poisoned_drinks:powder/hemlock', f'400 tfcagedalcohol:aged_{alcohol}', None, f'400 poisoned_drinks:poisoned_aged_{alcohol}')
+    for wine in WINES:
+        barrel_instant_recipe(rm, ('poison', wine), 'poisoned_drinks:powder/hemlock', f'400 firmalife:{wine}', None, f'400 poisoned_drinks:poisoned_{wine}')
     barrel_instant_recipe(rm, ('poison', 'water'), 'poisoned_drinks:powder/hemlock', '400 minecraft:water', None, '400 poisoned_drinks:poisoned_water')
     
 def generate_heat_recipes():
@@ -135,7 +148,7 @@ def generate_recipes():
 
 def generate_fluid_tags():
     print('\tGenerating fluid tags...')
-    rm.fluid_tag(('poisons'), *POISONED_ALCOHOLS)
+    rm.fluid_tag(('poisons'), *POISONED_ALCOHOLS, *POISONED_WINES)
     rm.fluid_tag('industrial_fluids', 'tfc:lye', 'tfc:limewater')
     rm.fluid_tag('tfc:drinkables', '#poisoned_drinks:poisons', '#poisoned_drinks:industrial_fluids')
     

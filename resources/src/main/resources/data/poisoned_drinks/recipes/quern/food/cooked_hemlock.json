@@ -1,0 +1,11 @@
+{
+  "__comment__": "This file was automatically created by mcresources",
+  "type": "tfc:quern",
+  "ingredient": {
+    "item": "poisoned_drinks:food/cooked_hemlock"
+  },
+  "result": {
+    "item": "poisoned_drinks:powder/hemlock",
+    "count": 1
+  }
+}

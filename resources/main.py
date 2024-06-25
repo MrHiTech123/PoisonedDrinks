@@ -120,8 +120,10 @@ def generate_misc_lang():
     rm.lang('fluid.poisoned_drinks.poisoned_water', 'Water')
     rm.lang('item.poisoned_drinks.bucket.poisoned_water', 'Poisoned Water Bucket')
     rm.lang('block.poisoned_drinks.poisoned_water', 'Water')
-    rm.lang('death.attack.vomiting', "%1$s vomited to death")
-    rm.lang('death.attack.wither', "%1$s died of tissue damage")
+    rm.lang('death.attack.vomiting', '%1$s vomited to death')
+    rm.lang('death.attack.wither', '%1$s died of tissue damage')
+    rm.lang('death.attack.wither.player', '%1$s died of tissue damage whilst fighting %2$s')
+    rm.lang('effect.minecraft.wither', 'Stomachache')
     
 
 def generate_instant_barrel_recipes():

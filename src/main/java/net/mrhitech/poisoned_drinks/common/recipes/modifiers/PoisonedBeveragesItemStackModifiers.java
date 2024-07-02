@@ -6,7 +6,7 @@ import net.minecraft.resources.ResourceLocation;
 
 public class PoisonedBeveragesItemStackModifiers {
     public static void registerItemStackModifierTypes() {
-        register("change_fluid_nbt", OutputFluidItemIngredientModifier.Serializer.CHANGE_FLUID_NBT);
+        register("modify_fluid", OutputFluidItemIngredientModifier.Serializer.CHANGE_FLUID_NBT);
     }
     
     private static void register(String name, ItemStackModifier.Serializer<?> serializer) {

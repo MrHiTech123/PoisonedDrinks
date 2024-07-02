@@ -125,6 +125,54 @@ def generate_misc_lang():
     rm.lang('death.attack.wither.player', '%1$s died of tissue damage whilst fighting %2$s')
     rm.lang('effect.minecraft.wither', 'Stomachache')
     
+def generate_crafting_recipes():
+    # write_crafting_recipe(
+    #     rm, ('limewater'),
+    #     {
+    #         'type': 'tfc:no_remainder_shapeless_crafting',
+    #         'ingredients': utils.ingredient_list((fluid_item_ingredient('100 minecraft:water'), 'tfc:powder:flux')),
+    #         'result': {'modifiers': [{'type': 'poisoned_drinks:modify_fluid', 'fluid': {'ingredient': 'tfc:limewater', 'amount': 500}}]}
+    #     }
+    # )
+    for i in range(1, 5 + 1):
+        write_crafting_recipe(
+            rm, ('crafting', 'poison', f'water_{i}'),
+            {
+                'type': 'tfc:no_remainder_shapeless_crafting',
+                'recipe': {
+                    'type': 'tfc:advanced_shapeless_crafting',
+                    'ingredients': utils.ingredient_list((fluid_item_ingredient('100 minecraft:water'), *(['poisoned_drinks:powder/hemlock'] * i))),
+                    'result': {'modifiers': [{'type': 'poisoned_drinks:modify_fluid', 'fluid': {'fluid': 'poisoned_drinks:poisoned_water', 'amount': i * 400}}]},
+                    'primary_ingredient': fluid_item_ingredient('100 minecraft:water')
+                }
+            }
+        )
+        for alcohol in ALCOHOLS:
+            write_crafting_recipe(
+                rm, ('crafting', 'poison', f'{alcohol}_{i}'),
+                {
+                    'type': 'tfc:no_remainder_shapeless_crafting',
+                    'recipe': {
+                        'type': 'tfc:advanced_shapeless_crafting',
+                        'ingredients': utils.ingredient_list((fluid_item_ingredient(f'100 tfc:{alcohol}'), *(['poisoned_drinks:powder/hemlock'] * i))),
+                        'result': {'modifiers': [{'type': 'poisoned_drinks:modify_fluid', 'fluid': {'fluid': f'poisoned_drinks:poisoned_{alcohol}', 'amount': i * 400}}]},
+                        'primary_ingredient': fluid_item_ingredient(f'100 tfc:{alcohol}')
+                    }
+                }
+            )
+            write_crafting_recipe(
+                rm, ('crafting', 'poison', f'aged_{alcohol}_{i}'),
+                {
+                    'type': 'tfc:no_remainder_shapeless_crafting',
+                    'recipe': {
+                        'type': 'tfc:advanced_shapeless_crafting',
+                        'ingredients': utils.ingredient_list((fluid_item_ingredient(f'100 tfcagedalcohol:aged_{alcohol}'), *(['poisoned_drinks:powder/hemlock'] * i))),
+                        'result': {'modifiers': [{'type': 'poisoned_drinks:modify_fluid', 'fluid': {'fluid': f'poisoned_drinks:poisoned_aged_{alcohol}', 'amount': i * 400}}]}, # TODO: FIX THIS
+                        'primary_ingredient': fluid_item_ingredient(f'100 tfcagedalcohol:aged_{alcohol}')
+                    }
+                }
+            )
+    
 
 def generate_instant_barrel_recipes():
     print('\tGenerating instant barrel recipes...')
@@ -145,6 +193,7 @@ def generate_quern_recipes():
 
 def generate_recipes():
     print('Generating recipes...')
+    generate_crafting_recipes()
     generate_instant_barrel_recipes()
     generate_heat_recipes()
     generate_quern_recipes()
@@ -154,11 +203,12 @@ def generate_fluid_tags():
     rm.fluid_tag(('poisons'), *POISONED_ALCOHOLS, *POISONED_WINES)
     rm.fluid_tag('industrial_fluids', 'tfc:lye', 'tfc:limewater')
     rm.fluid_tag('tfc:drinkables', '#poisoned_drinks:poisons', '#poisoned_drinks:industrial_fluids')
-    
+
     
 def generate_tags():
     print('Generating tags...')
     generate_fluid_tags()
+    
 
 def generate_worldgen():
     print('Generating worldgen...')

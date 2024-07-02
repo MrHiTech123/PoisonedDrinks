@@ -38,7 +38,6 @@ public record OutputFluidItemIngredientModifier(FluidStack outFluidParam) implem
         
         fluidHandler.drain(Integer.MAX_VALUE, IFluidHandler.FluidAction.EXECUTE);
         fluidHandler.fill(outFluidParam, IFluidHandler.FluidAction.EXECUTE);
-        
         return !output.isEmpty() ? output : new ItemStack(TFCItems.JUG.get());
     }
     

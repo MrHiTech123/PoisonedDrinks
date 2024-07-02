@@ -27,7 +27,6 @@ import net.mrhitech.poisoned_drinks.common.block.PoisonedDrinksBlocks;
 import net.mrhitech.poisoned_drinks.common.block.crop.Crop;
 import net.mrhitech.poisoned_drinks.common.fluids.PoisonedDrinksFluids;
 import net.mrhitech.poisoned_drinks.common.item.PoisonedDrinksItems;
-import net.mrhitech.poisoned_drinks.common.recipes.ingredients.PoisonedDrinksIngredients;
 import net.mrhitech.poisoned_drinks.common.recipes.modifiers.PoisonedBeveragesItemStackModifiers;
 import org.slf4j.Logger;
 
@@ -48,7 +47,6 @@ public class PoisonedDrinks
         PoisonedDrinksBlocks.register(modEventBus);
         PoisonedDrinksItems.register(modEventBus);
         PoisonedDrinksFluids.register(modEventBus);
-        PoisonedDrinksIngredients.registerIngredientTypes();
         PoisonedBeveragesItemStackModifiers.registerItemStackModifierTypes();
 
         // Register the commonSetup method for modloading

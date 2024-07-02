@@ -201,7 +201,7 @@ def generate_recipes():
 def generate_fluid_tags():
     print('\tGenerating fluid tags...')
     rm.fluid_tag(('poisons'), *POISONED_ALCOHOLS, *POISONED_WINES)
-    rm.fluid_tag('industrial_fluids', 'tfc:lye', 'tfc:limewater')
+    rm.fluid_tag('industrial_fluids', 'tfc:lye', 'tfc:limewater', 'tfc:tannin')
     rm.fluid_tag('tfc:drinkables', '#poisoned_drinks:poisons', '#poisoned_drinks:industrial_fluids')
 
     

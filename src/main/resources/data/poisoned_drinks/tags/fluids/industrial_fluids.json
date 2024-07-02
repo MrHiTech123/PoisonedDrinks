@@ -3,6 +3,7 @@
   "replace": false,
   "values": [
     "tfc:lye",
-    "tfc:limewater"
+    "tfc:limewater",
+    "tfc:tannin"
   ]
 }

@@ -202,7 +202,7 @@ def generate_heat_recipes():
 
 def generate_quern_recipes():
     print('\tGenerating quern recipes...')
-    quern_recipe(rm, ('food', 'cooked_hemlock'), not_rotten('poisoned_drinks:food/cooked_hemlock'), 'poisoned_drinks:powder/hemlock')
+    quern_recipe(rm, ('food', 'cooked_hemlock'), not_rotten('poisoned_drinks:food/cooked_hemlock'), {'item': 'poisoned_drinks:powder/hemlock', 'count': 2})
 
 def generate_recipes():
     print('Generating recipes...')

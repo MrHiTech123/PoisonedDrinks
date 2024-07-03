@@ -112,6 +112,11 @@
       "type": "tfc:instant_barrel_recipe",
       "recipe": "poisoned_drinks:barrel/poison/beer",
       "text": "Hemlock Powder can be used to poison various drinks, such as water or alcohol. This includes Firmalife Wine and Aged Alcohol from the Aged Alcohol mod.$(br2)Unless they are drunk, poisoned drinks are completely indistinguishable from their non-poisoned counterparts."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "poisoned_drinks:crafting/poison/rum_2",
+      "text": "Drinks can also be poisoned by crafting their container with Hemlock Powder in the crafting grid. This recipe requires 1 Hemlock Powder per 400 mb of fluid."
     }
 
   ],

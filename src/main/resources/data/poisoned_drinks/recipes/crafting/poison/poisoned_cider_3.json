@@ -1,0 +1,43 @@
+{
+  "__comment__": "This file was automatically created by mcresources",
+  "type": "tfc:no_remainder_shapeless_crafting",
+  "recipe": {
+    "type": "tfc:advanced_shapeless_crafting",
+    "ingredients": [
+      {
+        "type": "tfc:fluid_item",
+        "fluid_ingredient": {
+          "ingredient": "poisoned_drinks:poisoned_cider",
+          "amount": 100
+        }
+      },
+      {
+        "item": "poisoned_drinks:powder/hemlock"
+      },
+      {
+        "item": "poisoned_drinks:powder/hemlock"
+      },
+      {
+        "item": "poisoned_drinks:powder/hemlock"
+      }
+    ],
+    "result": {
+      "modifiers": [
+        {
+          "type": "poisoned_drinks:modify_fluid",
+          "fluid": {
+            "fluid": "poisoned_drinks:poisoned_cider",
+            "amount": 1200
+          }
+        }
+      ]
+    },
+    "primary_ingredient": {
+      "type": "tfc:fluid_item",
+      "fluid_ingredient": {
+        "ingredient": "poisoned_drinks:poisoned_cider",
+        "amount": 100
+      }
+    }
+  }
+}

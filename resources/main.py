@@ -237,6 +237,14 @@ def generate_instant_barrel_recipes():
         barrel_instant_recipe(rm, ('poison', wine), 'poisoned_drinks:powder/hemlock', f'400 firmalife:{wine}', None, f'400 poisoned_drinks:poisoned_{wine}')
     barrel_instant_recipe(rm, ('poison', 'water'), 'poisoned_drinks:powder/hemlock', '400 minecraft:water', None, '400 poisoned_drinks:poisoned_water')
     
+    # for alcohol in ALCOHOLS:
+    #     barrel_instant_recipe(rm, ('poison', f'poisoned_{alcohol}'), 'poisoned_drinks:powder/hemlock', f'400 poisoned_drinks:poisoned_{alcohol}', None, None)
+    #     barrel_instant_recipe(rm, ('poison', f'poisoned_aged_{alcohol}'), 'poisoned_drinks:powder/hemlock', f'400 poisoned_drinks:poisoned_aged_{alcohol}', None, None)
+    # for wine in WINES:
+    #     barrel_instant_recipe(rm, ('poison', f'poisoned_{wine}'), 'poisoned_drinks:powder/hemlock', f'400 poisoned_drinks:poisoned_{wine}', None, None)
+    # barrel_instant_recipe(rm, ('poison', 'poisoned_water'), 'poisoned_drinks:powder/hemlock', '400 poisoned_drinks:poisoned_water', None, None)
+    # 
+    
 def generate_heat_recipes():
     print('\tGenerating heat recipes...')
     heat_recipe(rm, ('food', 'cooked_hemlock'), 'poisoned_drinks:food/hemlock', 200, 'poisoned_drinks:food/cooked_hemlock')

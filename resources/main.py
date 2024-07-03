@@ -172,6 +172,19 @@ def generate_crafting_recipes():
                     }
                 }
             )
+        for wine in WINES:
+            write_crafting_recipe(
+                rm, ('crafting', 'poison', f'{wine}_{i}'),
+                {
+                    'type': 'tfc:no_remainder_shapeless_crafting',
+                    'recipe': {
+                        'type': 'tfc:advanced_shapeless_crafting',
+                        'ingredients': utils.ingredient_list((fluid_item_ingredient(f'100 firmalife:{wine}'), *(['poisoned_drinks:powder/hemlock'] * i))),
+                        'result': {'modifiers': [{'type': 'poisoned_drinks:modify_fluid', 'fluid': {'fluid': f'poisoned_drinks:poisoned_{wine}', 'amount': i * 400}}]},
+                        'primary_ingredient': fluid_item_ingredient(f'100 firmalife:{wine}')
+                    }
+                }
+            )
     
 
 def generate_instant_barrel_recipes():
@@ -203,7 +216,6 @@ def generate_fluid_tags():
     rm.fluid_tag(('poisons'), *POISONED_ALCOHOLS, *POISONED_WINES)
     rm.fluid_tag('industrial_fluids', 'tfc:lye', 'tfc:limewater', 'tfc:tannin')
     rm.fluid_tag('tfc:drinkables', '#poisoned_drinks:poisons', '#poisoned_drinks:industrial_fluids')
-
     
 def generate_tags():
     print('Generating tags...')

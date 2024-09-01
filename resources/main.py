@@ -66,7 +66,9 @@ def generate_crops():
         })
         
         rm.item_model(('seeds', crop)).with_lang(lang('%s seeds', crop)).with_tag('tfc:seeds')
-
+        
+        climate_range(rm, 'crop/hemlock', (25, 100, 0), (3, 30, 5))
+        
 def generate_food():
     print('Generating food items...')
     food_item(rm, ('hemlock'), 'poisoned_drinks:food/hemlock', Category.vegetable, 4, 2, 0, decay=0.7, veg=1)
